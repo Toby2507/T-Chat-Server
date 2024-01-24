@@ -1,0 +1,165 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+    body {
+      margin: 0;
+      background-color: #dbdae6;
+    }
+
+    table {
+      border-spacing: 0;
+    }
+
+    td {
+      padding: 0;
+    }
+
+    img {
+      border: 0;
+    }
+
+    .wrapper {
+      width: 100%;
+      table-layout: fixed;
+      background-color: #dbdae6;
+      padding-bottom: 60px;
+    }
+
+    .main {
+      background-color: #ffffff;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 600px;
+      border-spacing: 0;
+      font-family: sans-serif;
+      color: #505050;
+    }
+
+    .light__column {
+      margin: 20px 5% 0;
+      background-color: #ffffff;
+      padding: 10px 20px;
+      text-align: center;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .dark__column {
+      width: 90%;
+      margin: 0 5% 20px;
+      background-color: #828BD4;
+      text-align: center;
+      border-radius: 0 0 5px 5px;
+      color: #ffffff;
+    }
+
+    .accent__text {
+      color: #828BD4;
+      font-size: 24px;
+    }
+
+    .second {
+      border-radius: 5px;
+      padding: 10px 20px 35px;
+    }
+
+    .button {
+      background-color: #828BD4;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <center class="wrapper">
+    <table class="main" width="100%">
+      <!-- Top Border -->
+      <tr>
+        <td height="5" style="background-color: #828BD4;"></td>
+      </tr>
+      <!-- Logo and Header -->
+      <tr>
+        <td style="padding: 14px 0 4px;">
+          <table width="100%">
+            <tr>
+              <td style="padding: 0 62px 10px;">
+                <a href="/"><img
+                    src="https://res.cloudinary.com/db1nlq5lv/image/upload/v1668826117/tchat_email_logo_f1l0h6.png"
+                    alt="Modern Logo" width="100" title="Modern Logo"></a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- Banner -->
+      <tr>
+        <td style="background-color: #828BD4;">
+          <table width="100%">
+            <tr>
+              <td style="text-align: center; padding: 10px 20px; color: #fff;">
+                <a href="#"><img
+                    src="https://res.cloudinary.com/db1nlq5lv/image/upload/v1668580527/envelope_email_nr5xte.png"
+                    alt="modern logo white" width="180"></a>
+                <p style="padding: 20px 0 0; font-size: 12px; margin: 0;">THANKS FOR SIGNING UP WITH TCHAT</p>
+                <p style="margin: 0; padding: 3px 0 5px; font-size: 28px;">Verify Your E-mail Address</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- Main Section with Code -->
+      <tr>
+        <td style="background-color: #dbdae6;">
+          <table width="100%">
+            <tr>
+              <td>
+                <table class="light__column">
+                  <tr>
+                    <td>
+                      <p
+                        style="color:#171a1b; font-size: 20px; text-align: center; font-weight: bolder; margin-bottom: 5px;">
+                        Hi, <span class="accent__text"><%= name %></span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>You're almost ready to get started. Please use this verification code to complete your signup
+                        process and enjoy exclusive chatting service with us.</p>
+                    </td>
+                  </tr>
+                </table>
+                <table class="dark__column">
+                  <tr>
+                    <td>
+                      <p style="font-size: 30px; letter-spacing: 5px; margin: 12px;"><%= verifyCode %></p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- Footer -->
+      <tr>
+        <td style="background-color: #dbdae6;">
+          <p style="font-size: 26px; font-weight: bold; color: #8b8b8b; text-align: center;">Happy Chatting!</p>
+          <hr>
+          <p style="font-size: 14px; color: #8b8b8b; text-align: center; margin: 0;">&copy; 2022 Tchat. All rights
+            reserved.</p>
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+
+</html>

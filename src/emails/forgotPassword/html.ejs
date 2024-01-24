@@ -1,0 +1,154 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+    body {
+      margin: 0;
+      background-color: #dbdae6;
+    }
+
+    table {
+      border-spacing: 0;
+    }
+
+    td {
+      padding: 0;
+    }
+
+    img {
+      border: 0;
+    }
+
+    .wrapper {
+      width: 100%;
+      table-layout: fixed;
+      background-color: #dbdae6;
+      padding-bottom: 60px;
+    }
+
+    .main {
+      background-color: #ffffff;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 600px;
+      border-spacing: 0;
+      font-family: sans-serif;
+      color: #505050;
+    }
+
+    .logo {
+      padding: 0 42% 10px;
+    }
+
+    @media all and (max-width: 400px) {
+      .logo {
+        padding: 0 35% 10px;
+      }
+    }
+
+    .light__column {
+      margin: 20px 5% 0;
+      background-color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .accent__text {
+      color: #828BD4;
+      font-size: 24px;
+    }
+
+    .second {
+      border-radius: 5px;
+      padding: 10px 20px 35px;
+    }
+
+    .button {
+      background-color: #828BD4;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <center class="wrapper">
+    <table class="main" width="100%">
+      <!-- Top Border -->
+      <tr>
+        <td height="5" style="background-color: #828BD4;"></td>
+      </tr>
+      <!-- Logo and Header -->
+      <tr>
+        <td style="padding: 14px 0 4px;">
+          <table width="100%">
+            <tr>
+              <td class="logo">
+                <a href="/"><img
+                    src="https://res.cloudinary.com/db1nlq5lv/image/upload/v1668826117/tchat_email_logo_f1l0h6.png"
+                    alt="Modern Logo" width="100" title="Modern Logo"></a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- Main Section with Code -->
+      <tr>
+        <td style="background-color: #dbdae6;">
+          <table width="100%">
+            <tr>
+              <td>
+                <table class="light__column">
+                  <tr>
+                    <td>
+                      <p>You're receiving this email because you (or someone else) requested the reset of <span
+                          class="accent__text">'<%= name %>'</span> T Chat user account.</p>
+                      <p>Please click the button below to complete the process.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center; padding: 20px 0;">
+                      <a href="<%- resetUrl %>" class="button">Click to reset password</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Or paste the following link into your browser: <br> <a href="<%- resetUrl %>">
+                          <%= resetUrl %>
+                        </a></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>If you did not request this, please ignore this email and your password will remain unchanged.
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- Footer -->
+      <tr>
+        <td style="background-color: #dbdae6;">
+          <p style="font-size: 26px; font-weight: bold; color: #8b8b8b; text-align: center;">Happy Chatting!</p>
+          <hr>
+          <p style="font-size: 14px; color: #8b8b8b; text-align: center; margin: 0;">&copy; 2022 Tchat. All rights
+            reserved.</p>
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+
+</html>
